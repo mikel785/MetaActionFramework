@@ -1,0 +1,42 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:meta="clr-namespace:MAF.Framework;assembly=MetaActionFramework"
+                    xmlns:icons="clr-namespace:MAF.TestApp.Resources">
+    <meta:MetaActionGroup x:Key="FileMetaGroup">
+        <meta:MetaAction Title="New"
+                         ToolTip="Create new document"
+                         ShortCut="Ctrl+N"
+                         Icon="{x:Static icons:Icons32.document_new}"
+                         SeparatorPlacement="Menu"
+                         CaliburnAction="HandleAction($source)"/>
+
+        <meta:MetaAction Title="Open"
+                         ToolTip="Open document"
+                         ShortCut="Ctrl+O"
+                         Icon="{x:Static icons:Icons32.document_open}"
+                         CaliburnAction="HandleAction($source)"/>
+
+        <meta:MetaAction Title="Save"
+                         ToolTip="Save document"
+                         SeparatorPlacement="Menu"
+                         ShortCut="Ctrl+S"
+                         Icon="{x:Static icons:Icons32.document_save}"
+                         CaliburnAction="HandleAction($source)"/>
+
+        <meta:MetaAction Title="Save as..."
+                         ToolTip="Save document. This action does no have shortcut and present in menu only!"
+                         Icon="{x:Static icons:Icons32.document_save}"
+                         Placement="Menu"
+                         CaliburnAction="HandleAction($source)"/>
+
+        <!-- Exit app action. Will be placed only in menu(SeparatorPlacement="Menu").
+             Also separator item will be placed before in menu(SeparatorPlacement="Menu").-->
+        <meta:MetaAction Title="Exit"
+                         ToolTip="Exit application. This action is prents in menu only!"
+                         SeparatorPlacement="Menu"
+                         ShortCut="Alt+Ctrl+S"
+                         Icon="{x:Static icons:Icons32.application_exit}"
+                         CaliburnAction="HandleAction($source)"
+                         Placement="Menu"/>
+    </meta:MetaActionGroup>
+</ResourceDictionary>

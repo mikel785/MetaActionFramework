@@ -1,2 +1,4 @@
 # MetaActionFramework
-Small WPF framework for easy Toolbar, Menu and ContextMenu actions creations and management.
+Small WPF framework for applications based on Caliburn Micro to make easy Toolbar, Menu and ContextMenu actions creation and shortcut binding.
+
+

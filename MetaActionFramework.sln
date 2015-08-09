@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{AEA7ABE3-FE5C-4CDD-B779-5EA926E7F17F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaActionFramework", "MetaActionFramework\MetaActionFramework.csproj", "{C47D97FD-9B80-41F9-93EF-3DADD0E1019F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{185C77B7-9667-4A39-9BF3-510A8B324813}"
+	ProjectSection(SolutionItems) = preProject
+		config\MagicBuild.props = config\MagicBuild.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEA7ABE3-FE5C-4CDD-B779-5EA926E7F17F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA7ABE3-FE5C-4CDD-B779-5EA926E7F17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA7ABE3-FE5C-4CDD-B779-5EA926E7F17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA7ABE3-FE5C-4CDD-B779-5EA926E7F17F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C47D97FD-9B80-41F9-93EF-3DADD0E1019F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C47D97FD-9B80-41F9-93EF-3DADD0E1019F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C47D97FD-9B80-41F9-93EF-3DADD0E1019F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C47D97FD-9B80-41F9-93EF-3DADD0E1019F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

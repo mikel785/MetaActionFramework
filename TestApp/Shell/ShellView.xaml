@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="MAF.TestApp.Shell.ShellView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MAF.TestApp.Shell"
+             xmlns:cal="http://www.caliburnproject.org"
+             d:DataContext="{d:DesignInstance local:ShellViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <TabControl ItemsSource="{Binding Items}"
+                SelectedItem="{Binding ActiveItem}">
+        <TabControl.ItemTemplate>
+            <DataTemplate>
+                <TextBlock Text="{Binding DisplayName}"/>
+            </DataTemplate>
+        </TabControl.ItemTemplate>
+        <TabControl.ContentTemplate>
+            <ItemContainerTemplate>
+                <ContentControl cal:View.Model="{Binding}"/>
+            </ItemContainerTemplate>
+        </TabControl.ContentTemplate>
+    </TabControl>
+</UserControl>

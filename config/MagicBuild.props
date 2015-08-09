@@ -1,0 +1,10 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup Label="MagicBuild">
+    <MagicTargetName>$([System.IO.Path]::GetFileNameWithoutExtension($(MSBuildProjectName)))</MagicTargetName>
+    <BaseIntermediateOutputPath>$(SolutionDir)\build\obj\</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\$(MagicTargetName)\</IntermediateOutputPath>
+    <BaseOutputPath>$(SolutionDir)\build\bin\</BaseOutputPath>
+    <OutputPath>$(BaseOutputPath)$(Configuration)\$(MagicTargetName)\</OutputPath>
+  </PropertyGroup>
+</Project>
